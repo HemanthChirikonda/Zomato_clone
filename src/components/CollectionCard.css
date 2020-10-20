@@ -1,0 +1,46 @@
+*{
+    margin:0 ;
+    padding: 0;
+}
+.collection-div{
+margin: 1rem;
+/* border-radius: 3rem; */
+}
+.collection{
+    width: 15rem;
+   height: 20rem;
+border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    
+}
+.bg-collection{
+    border-radius: inherit;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 1.4s ease 0s;
+    transition-property: all;
+    transition-duration: 1.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+}
+.collection-link{
+    border-radius: inherit;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+.collection-link a{
+    font-style: none;
+    color: white;
+}
