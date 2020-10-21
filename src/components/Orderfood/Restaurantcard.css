@@ -1,0 +1,38 @@
+.imageContainer{
+margin-left:1rem ;
+margin-top:1rem ;
+border-radius: 0.5rem;
+    max-width:6rem;
+    max-height: 7rem;
+    justify-content: center;
+    align-content: center;
+    border:1px;
+    overflow: hidden;
+
+}
+
+
+.imageContainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: none;
+    opacity: 1;
+    transition: all 1.4s ease 0s;
+}
+
+.maintitle{
+    color: rgba(231, 12, 12, 0.938);
+    margin: 0;
+    padding: 0;
+}
+
+.wraptext{
+    margin: 0;
+    margin-right: 4px;
+    font-size: 0.7rem;
+}
+.onlineOrder-btn{
+    background-color: rgba(170, 240, 185, 0.486);
+    border-radius: 0;
+}

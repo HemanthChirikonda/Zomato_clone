@@ -4,6 +4,14 @@ import Title from './Title'
 
 
 const LogindefultPage = ({ setEMailPAge, setSignPAge }) => {
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+      }
+
     return (<Fragment>
         <Title text={'login'} className='col-12' />
         <div className='col-12 mt-2'>
@@ -24,9 +32,8 @@ const LogindefultPage = ({ setEMailPAge, setSignPAge }) => {
         </div>
 
         <button className="btn btn-outline-secondary col-12 mt-4" type="button" id="button-addon1" onClick={setEMailPAge}>
-            <i class="fa fa-envelope" style={{ fontSize: "25px" }}></i><span>{'Sign up using Email'}</span></button>
-        <button className="btn btn-outline-secondary col-12 mt-4" type="button" id="button-addon1">
-            <i class="fa fa-envelope" style={{ fontSize: "25px" }}></i><span>{'Sign up using Gmail'}</span></button>
+            <i className="fa fa-envelope" style={{ fontSize: "25px" }}></i><span>{'Sign up using Email'}</span></button>
+            <div className="g-signin2" data-onsuccess="onSignIn"></div>
         <div className={'col-12 mt-3'}>
             <p>{'Alredy have an account ?'}<button onClick={setSignPAge} style={{ border: 'none', background: 'none' }}>{'Sign up'}</button></p>
         </div>
@@ -61,8 +68,8 @@ const SignupPage = ({ togglepages }) => {
                     <div className={'col-5 border mt-5'}>{''}</div>
                 </div>
             </div>
-            <button className="btn btn-outline-secondary col-12 mt-4" type="button" id="button-addon1">
-                <i class="fa fa-envelope" style={{ fontSize: "25px" }}></i><span>{'Sign up using Gmail'}</span></button>
+            <div className="g-signin2 col-12" data-onsuccess="onSignIn"></div>
+
             <div className={'col-12 mt-3'}>
                 <p>{'Alredy have an account ?'}<button onClick={togglepages} style={{ border: 'none', background: 'none' }}>{'login'}</button></p>
             </div>
