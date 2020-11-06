@@ -27,12 +27,16 @@ border-radius: 1rem;
     object-fit: cover;
     transform: scale(1);
     opacity: 1;
+    
+
+}
+.bg-collection:hover{
+    transform: scale(1.05); 
     transition: all 1.4s ease 0s;
     transition-property: all;
     transition-duration: 1.4s;
     transition-timing-function: ease;
     transition-delay: 0s;
-
 }
 .collection-link{
     border-radius: inherit;
@@ -44,3 +48,4 @@ border-radius: 1rem;
     font-style: none;
     color: white;
 }
+

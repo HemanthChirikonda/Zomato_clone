@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.headercontainer{
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(218, 211, 211, 0.925);
+}
+
+.logocontainer{
+    position: relative;
+    top: 1.5rem;
+    left: 10rem;
+    width: 5.5rem;
+    height: 1.1rem;
+}
+
+.logocontainer img{
+   position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 1.4s ease 0s;
+    transition-property: all;
+    transition-duration: 1.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.logincontainter{
+    float: right;
+    margin-right: 10rem;
+    margin-top:-0.5rem ;  
+}
+.logincontainter button{
+    margin-right: 1rem;
+   
+}
+
+.loginbutton{
+    border: none;
+    background: none;
+    color: white;
+}
+
+.createAcoountbutton{
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgba(185, 0, 0, 0.753);
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.subheader{
+    
+    width: 100vw;
+    height: 2rem;
+    border: 1px solid black;
+}
+
+.getappContainer{
+    margin-left: 10rem;
+    display: inline-flex;
+    border: black;
+}
+
+.getappContainer a{
+    list-style: none;
+    font-style: none;
+    outline-style: none;
+}
+
+
+.optionsContainer{
+    margin-top: 0;
+    float: right;
+    margin-right: 7rem;
+}
+
+.optionsContainer ul li{
+    display: inline;
+    margin-right: 3rem;
+}
+
+
+.searchContainer{
+  
+    
+    float: right;
+    margin-right: 2rem;
+    margin-top:-0.5rem ;
+
+}

@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 import './Restaurantcard.css'
 
 const ResturantCard = () => {
     const item = ['chennice', 'biriyani', 'north', 'south']
     return (<Fragment>
         <div className={"col-6 "}>
-            <div className="card mb-3 bg-white" style={{ "max-width": "540",position:'relative' }}>
+            <div className="card mb-3 bg-white" style={{ "max-width": "540", position: 'relative' }}>
                 <div className="row no-gutters " >
                     <div className=" imageContainer">
                         <img src="https://thumbs.dreamstime.com/z/woman-praying-free-birds-to-nature-sunset-background-woman-praying-free-birds-enjoying-nature-sunset-99680945.jpg" alt="..." />
@@ -31,16 +32,16 @@ const ResturantCard = () => {
 
                         </div>
                     </div>
-                  
-                <div className='col-12' style={{ borderTop: '1px solid lightgray' }}>
-                
-                    <div style={{backgroundColor:'lightgreen'}}>
-                    <button className='btn btn-outline-success onlineOrder-btn' style={{float:'right',border:'none'}}>{'Order Online >'}</button>
+
+                    <div className='col-12' style={{ borderTop: '1px solid lightgray' }}>
+
+                        <div style={{ backgroundColor: 'lightgreen' }}>
+                            <button className='btn btn-outline-success onlineOrder-btn' style={{ float: 'right', border: 'none' }}><Link to={'/order-online/page'}>{'Order Online >'}</Link></button>
+                        </div>
                     </div>
+
                 </div>
-               
-                </div>
-               
+
 
             </div>
         </div>

@@ -1,0 +1,67 @@
+.banner-home-div{
+    margin: auto;
+    position: relative;
+    color: white; 
+}
+@media (max-width: 480px){
+.banner-home-div{
+    margin-bottom: 1.5rem;
+}
+}
+.banner-home{
+    background: rgb(200, 200, 200);
+    height: calc(100vh - 10rem);
+    min-height: 25em;
+    max-height: 26em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    position: relative;
+    overflow: hidden;
+
+    
+}
+.banner-home::after,.banner-home::before{
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.banner-home img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+    
+}
+
+
+
+.authWrapper{
+    /* float: left; */
+    position: absolute;
+    right: 8rem;
+    top: 2rem;
+    border: 2px soild whitesmoke;
+}
+.authWrapper ul li{
+  
+    list-style: none;
+    
+    margin-left: 1rem;
+    
+    
+}
+.authWrapper a{
+   font-style: none;
+   color: white;
+ /* font-style: normal; */
+}
+.authWrapper a:hover{
+    font-style: none;
+}
